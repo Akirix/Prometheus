@@ -1,0 +1,9 @@
+[Unit]
+Description=MongoDB Exporter
+
+[Service]
+User=prometheus
+ExecStart=/home/prometheus/Prometheus/exporters/mongodb_exporter
+
+[Install]
+WantedBy=default.target

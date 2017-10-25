@@ -1,0 +1,9 @@
+[Unit]
+Description=MySQL Exporter
+
+[Service]
+User=prometheus
+ExecStart=/home/prometheus/Prometheus/exporters/mysqld_exporter
+
+[Install]
+WantedBy=default.target
