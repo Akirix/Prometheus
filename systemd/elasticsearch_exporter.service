@@ -1,0 +1,9 @@
+[Unit]
+Description=Elasticsearch Node Exporter
+
+[Service]
+User=prometheus
+ExecStart=/home/prometheus/Prometheus/exporters/elasticsearch_exporter
+
+[Install]
+WantedBy=default.target

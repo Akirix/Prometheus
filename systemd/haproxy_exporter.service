@@ -1,0 +1,9 @@
+[Unit]
+Description=HAProxy Exporter
+
+[Service]
+User=prometheus
+ExecStart=/home/prometheus/Prometheus/exporters/haproxy_exporter
+
+[Install]
+WantedBy=default.target
